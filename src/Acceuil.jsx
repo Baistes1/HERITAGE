@@ -479,6 +479,7 @@ function ProductCard({ product }) {
   useEffect(() => {
     resetTimer();
     return () => { clearInterval(timerRef.current); clearTimeout(animTimerRef.current); };
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [frames.length]);
 
   useEffect(() => { setPrevIdx(null); setAnimating(false); }, [sexe]);

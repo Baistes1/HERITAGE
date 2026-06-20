@@ -1,26 +1,39 @@
-export const Navbar = [ "Contact Us","Home", "About Us"]
+export const Navbar = ["Accueil", "Produits", "Contact"];
 
-export const Footer = ["About Us", "Contact Us", "Terms of Service", "Privacy Policy"]
+export const Footer = ["À propos", "Contact", "CGV", "Confidentialité"];
 
-export const SocialMedia = ["TikTok", "Instagram", "Whatsapp"]
+export const SocialMedia = ["TikTok", "Instagram", "WhatsApp"];
 
 export const Products = [
-    {
-        id: 1,
-        name: "Heritage Classic",
-        price: 130,
-        color: ["Blanc", "Noir", "Vert"],
-        images: {
-            homme: {
-                "Blanc": "img/Men_White.png",
-                "Noir":  "img/Man_Black.png",
-                "Vert":  "img/Man_Green.png"
-            },
-            femme: {
-                "Blanc": "img/Girl_White.png",
-                "Noir":  "img/Girl_Black.png",
-                "Vert":  "img/Girl_Green.png"
-            }
-        }
-    }
-]
+  {
+    id: 1,
+    name: "Box Organiseur",
+    subtitle: "Rangement modulable empilable",
+    price: 149,
+    sizes: ["Petit", "Moyen", "Grand"],
+    color: ["Blanc", "Beige", "Gris", "Sauge"],
+    badge: "Bestseller",
+    images: {
+      "Blanc": "img/box_blanc.jpg",
+      "Beige": "img/box_beige.jpg",
+      "Gris":  "img/box_gris.jpg",
+      "Sauge": "img/box_sauge.jpg",
+    },
+    features: ["Empilable", "Couvercle inclus", "Lavable", "Livraison 24–48h"],
+  },
+  {
+    id: 2,
+    name: "Box Premium",
+    subtitle: "Grande capacité avec séparateurs",
+    price: 229,
+    sizes: ["Moyen", "Grand", "XL"],
+    color: ["Blanc", "Anthracite", "Terracotta"],
+    badge: "Nouveau",
+    images: {
+      "Blanc":      "img/premium_blanc.jpg",
+      "Anthracite": "img/premium_anthracite.jpg",
+      "Terracotta": "img/premium_terracotta.jpg",
+    },
+    features: ["Séparateurs inclus", "Anti-poussière", "Grande capacité", "Empilable"],
+  },
+];
